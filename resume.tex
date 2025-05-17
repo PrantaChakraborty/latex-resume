@@ -1,7 +1,5 @@
-
-
 \documentclass[letterpaper,11pt]{article}
-
+\usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -156,7 +154,7 @@
         
         \textbf{Languages:}{ Python, JavaScript} \\ \vspace{3pt}
         
-        \textbf{Technologies:}{ Django, Django REST Framework, React.js, JQuery, Ajax, HTML \& CSS (Basic), PostgreSQL, Git, AWS, Jenkins,  Docker.} \\ \vspace{3pt}
+        \textbf{Technologies:}{ Django, Django REST Framework, FastAPI, PostgreSQL, Redis, MQTT, Git, AWS, Jenkins,  Docker.} \\ \vspace{3pt}
         
     }}
   \resumeSubHeadingListEnd
@@ -173,35 +171,37 @@
       {Zicore Technologies}{Dhaka, Bangladesh}
       {Software Engineer}{Feb 2023 \textbf{--} Present, Full-time}
         \resumeItemListStart
-            \resumeItem{Design and development of the back-end for an IoT-based application using Python and Django REST framework.}
-            \resumeItem{Collaborated seamlessly with mobile, front-end, and firmware teams, ensuring a cohesive integration of system components.}
-            \resumeItem{Used Celery for asynchronous task processing, enhancing system responsiveness and efficiency.Utilized Redis as a message broker for effective communication between system components.}
-            \resumeItem{Integrated Web Sockets for real-time communication, elevating user experience through instantaneous updates between the back-end, and front-end, and also mobile application. Push notifications for the best user experience.}
-            \resumeItem{Established Jenkins pipelines for automated build, testing, and deployment, ensuring a streamlined release cycle.}
-            \resumeItem{Played a key role in designing the system architecture, focusing on scalability, security, and performance.}
-            \resumeItem{\textbf{Technologies}: Python, Django, Django Rest Framework, AWS (EC2, S3, Lightsail.), Celery, Celery-Beat, Redis, Web-Sockets, Jenkins (CI/CD), MQTT, PostgreSQL.}
+            \resumeItem{Led the design and development of the backend for \textbf{\href{https://satarko.com/}{Satarko}}, an IoT-based application, using \textbf{Python} and \textbf{Django REST Framework}, ensuring scalability and performance.}
+            \resumeItem{Seamlessly collaborated with mobile, front-end, and firmware teams to achieve cohesive integration of system components and functionalities.}
+            \resumeItem{Significantly enhanced system responsiveness and efficiency by leveraging Celery for asynchronous task processing and Redis as a message broker for effective inter-service communication.}
+            \resumeItem{Implemented real-time communication using Web Sockets, providing instantaneous updates between backend, frontend, and mobile applications, contributing to an improved user experience with push notifications. This allowed users to monitor the state of connected hardware through real-time events.}
+            \resumeItem{Established and maintained Jenkins pipelines for automated build, testing, and deployment (CI/CD), streamlining the release cycle and ensuring code quality.}
+            \resumeItem{Played a key role in architecting the system, focusing on scalability, security, and performance optimization to accommodate future growth.}
+            \resumeItem{\textbf{Technologies}: Python, Django, Django REST Framework, AWS (EC2, S3, Lightsail, Route53, Cloudfront, Param-Store), Celery, Redis, Jenkins (CI/CD), MQTT, PostgreSQL, Docker, Grafana, Prometheus.}
         \resumeItemListEnd
 
     \resumeSubheading
       {Codesmith Tech Ltd.}{Dhaka, Bangladesh}
       {Software Engineer}{Mar 2022 \textbf{--} Jan 2023}
         \resumeItemListStart
-            \resumeItem{Worked as a core backend developer to build \textbf{Buyduy}, a multivendor e-commerce platform based on microservice architecture, and two internal dashboards for regional admin and vendor.}
-            \resumeItem{Implement real-time chat service for regional admin and vendor using Websockets.}
-            \resumeItem{Used saga pattern to manage data consistency.}
-            \resumeItem{Used both event-based and HTTP-based communication on service-to-service.}
-            \resumeItem{Deployed the backend applications on AWS(lightsail) and frontend on AWS(S3) integrated with Cloudflare CDN.}
-            \resumeItem{\textbf{Technologies}: Python, Django, Django Rest Framework, AWS (EC2, S3, Lightsail.), Celery, Celery-Beat Redis, Web-Sockets, PostgreSQL.}
+            \resumeItem{Served as a core backend developer for \textbf{\href{https://byduy.com/}{Byduy}}, a multi-vendor e-commerce platform built on a microservice architecture, and developed two internal dashboards for regional administrators and vendors.}
+            \resumeItem{Developed and implemented a real-time chat service utilizing Django Channels, facilitating seamless communication between vendors and administrators, as well as customers and vendors.}
+            \resumeItem{Developed an order tracking system for vendors, enhancing their operational efficiency and visibility.}
+            \resumeItem{Implemented \textbf{Elasticsearch} with Django-Elasticsearch-DSL for product searching, significantly enhancing the platform's search functionality.}
+            \resumeItem{Employed the saga pattern to ensure data consistency across the distributed microservice architecture.}
+            \resumeItem{Utilized both event-based and HTTP-based communication strategies for efficient service-to-service interaction.}
+            \resumeItem{Successfully deployed the entire Buyduy application on AWS (backend: Lightsail, frontend: S3 integrated with Cloudflare CDN), demonstrating full-stack deployment capabilities.}
+            \resumeItem{\textbf{Technologies}: Python, Django, Django REST Framework, Django Channels, Elasticsearch, AWS (EC2, S3, Lightsail), Celery, Celery-Beat Redis, PostgreSQL.}
         \resumeItemListEnd
 
     \resumeSubheading
       {Codesmith Tech Ltd.}{Dhaka, Bangladesh}
       {Junior Software Engineer}{Mar 2021 \textbf{--} Mar 2022}
         \resumeItemListStart
-            \resumeItem{Worked as a back-end developer for  \textbf{\href{https://wecorporates.com/}{WeCorporates}}, a corporate social platform for Bangladesh.}
-            \resumeItem{Email-based authentication system along with social authentication.}
-            \resumeItem{Implement real-time notification and chat service in the page-rendered application.}
-            \resumeItem{Developed CMS for existing e-commerce.}
+            \resumeItem{Served as a core backend developer for \textbf{\href{https://wecorporates.com/}{WeCorporates}}, a corporate social platform for Bangladesh.}
+            \resumeItem{Implemented an email-based authentication system alongside social authentication for user onboarding.}
+            \resumeItem{Developed real-time notification and chat services within the page-rendered application, enhancing user engagement.}
+            \resumeItem{Developed a Content Management System (CMS) for an existing e-commerce platform.}
             \resumeItem{\textbf{Technologies}: Django, Django Channels, Celery, Celery Beat, JavaScript, Ajax, PostgreSQL, Git, Redis.}
         \resumeItemListEnd
     
@@ -275,32 +275,32 @@
 
 %----------- PROJECTS -----------
 
-\section{Projects}
-    \vspace{3pt}
-    \resumeSubHeadingListStart
+% \section{Projects}
+%     \vspace{3pt}
+%     \resumeSubHeadingListStart
       
-      \resumeProjectHeading
-        {\textbf{Online Game} $|$ \emph{\href{https://gitlab.com/PrantaChakraborty/tic-tac-toe}{\color{blue}\faGithub \hspace{.5pt}}}}{}
-          \resumeItemListStart
-            \resumeItem{A real-time web-based online \textbf{Tic-Tac-Toe} game using web-socket.}
-            % \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-          \resumeItemListEnd
+%       \resumeProjectHeading
+%         {\textbf{Online Game} $|$ \emph{\href{https://gitlab.com/PrantaChakraborty/tic-tac-toe}{\color{blue}\faGithub \hspace{.5pt}}}}{}
+%           \resumeItemListStart
+%             \resumeItem{A real-time web-based online \textbf{Tic-Tac-Toe} game using web-socket.}
+%             % \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
+%           \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{E-commerce} $|$ \emph{\href{https://github.com/PrantaChakraborty/Ecommerce}{\color{blue}\faGithub \hspace{.5pt}}}}{}
-          \resumeItemListStart
-            \resumeItem{Full-featured shopping cart. User Authentication with email and social authentication.}
-            \resumeItem{Integrated third-party packages also third-party APIs.}
-          \resumeItemListEnd
+%       \resumeProjectHeading
+%         {\textbf{E-commerce} $|$ \emph{\href{https://github.com/PrantaChakraborty/Ecommerce}{\color{blue}\faGithub \hspace{.5pt}}}}{}
+%           \resumeItemListStart
+%             \resumeItem{Full-featured shopping cart. User Authentication with email and social authentication.}
+%             \resumeItem{Integrated third-party packages also third-party APIs.}
+%           \resumeItemListEnd
       
-      % \resumeProjectHeading
-      %   {\textbf{CMPE 250 Projects} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}\faGithub \hspace{.5pt}}}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{Five Java projects assigned for the Data Structures and Algorithms (CMPE 250) course in the Fall 2021-22 semester.}
-      %       \resumeItem{These projects apply DS\&A concepts such as discrete-event simulation (DES) using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree (MST), Dinic's algorithm for maximum flow problems, and weighted job scheduling with dynamic programming to real-world problems.}
-      %     \resumeItemListEnd
+%       % \resumeProjectHeading
+%       %   {\textbf{CMPE 250 Projects} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}\faGithub \hspace{.5pt}}}}{}
+%       %     \resumeItemListStart
+%       %       \resumeItem{Five Java projects assigned for the Data Structures and Algorithms (CMPE 250) course in the Fall 2021-22 semester.}
+%       %       \resumeItem{These projects apply DS\&A concepts such as discrete-event simulation (DES) using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree (MST), Dinic's algorithm for maximum flow problems, and weighted job scheduling with dynamic programming to real-world problems.}
+%       %     \resumeItemListEnd
       
-    \resumeSubHeadingListEnd
+%     \resumeSubHeadingListEnd
 
 
 % %----------- EDUCATION -----------
